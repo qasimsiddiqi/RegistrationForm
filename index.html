@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        input{
+            background-color: transparent;
+            border: 0;
+            border-bottom: 2px solid;
+            border-width: 200%;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            background-color:dimgray;
+        }
+        .container{
+            background-color: darkslategray;
+            border: 10px;
+            border-radius: 20px;
+            border-color: black;
+            width: 500px;
+            height: 500px;
+        }
+        .button{
+            background-color: steelblue;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color: aliceblue;
+            padding: 15px 25px;
+            border-radius: 5px;
+            font-size: medium;
+            border: 2px solid black;
+        }
+        .name{
+            display: flex;
+            justify-content: center
+        }
+        .email{
+            display: flex;
+            justify-content: center
+        }
+        .password{
+            display: flex;
+            justify-content: center
+        }
+        form{
+            font-family: sans-serif;
+            padding-left: 20px;
+            color: aliceblue;
+            font-size: 18px;
+        }
+        label{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        h1{
+            color: darkgoldenrod;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Registration Form</h1>
+        <form id="form-id" action="your server endpoint" method="post">
+
+                <label for="name">Name </label>
+                <br>
+                <input type="text" id="name" name="name" required>
+                <br>
+
+                <label for="email">Email </label>
+                <br>
+                <input type="email" id="email" name="email" required>
+                <br>
+
+                <label for="password">Password </label>
+                <br>
+                <input type="text" id="password" name="password" required>
+                <br>
+
+                <label for="contact">Contact</label>
+                <br>
+                <input type="tel" id="contact" name="contact" required>
+                <br>
+
+                <label for="image">Upload Image</label>
+                <br>
+                <input type="file" id="image" name="image" accept=".png, .jpg">
+                <br>
+
+                <label for="gender">Gender</label>
+                <br> 
+                <input type="radio" id="gendermale" name="gender" value="male">
+                <label for="gendermale">Male</label>
+                
+                <input type="radio" id="genderfemale" name="gender" value="female">
+                <label for="genderfemale">Female</label>
+
+                <input type="radio" id="genderothers" name="gender" value="others">
+                <label for="genderothers">Others</label>
+                <br>
+
+                <br>
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" max="23-08-2023" min="01-01-1990" required>
+                <br>
+
+            <button class="button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
